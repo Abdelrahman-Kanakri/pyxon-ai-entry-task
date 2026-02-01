@@ -35,12 +35,15 @@ RUN pip install --no-cache-dir --user -r requirements.txt
 COPY --chown=user . .
 
 # Create writable directories for uploads and data
-RUN mkdir -p $HOME/app/data/uploads $HOME/app/data/chroma_db $HOME/app/logs
+RUN mkdir -p $HOME/app/data/uploads $HOME/app/data/chroma_db $HOME/app/logs $HOME/.streamlit
 
-# Create startup script
+# Copy streamlit config if exists
+RUN if [ -f .streamlit/config.toml ]; then cp .streamlit/config.toml $HOME/.streamlit/config.toml; fi
+
+# Create startup script with Streamlit config flags
 RUN echo '#!/bin/bash\n\
     uvicorn api.main:app --host 0.0.0.0 --port 8000 &\n\
-    streamlit run interface/app.py --server.port 7860 --server.address 0.0.0.0\n\
+    streamlit run interface/app.py --server.port 7860 --server.address 0.0.0.0 --server.enableCORS false --server.enableXsrfProtection false\n\
     wait -n\n\
     exit $?' > $HOME/app/start.sh && chmod +x $HOME/app/start.sh
 
