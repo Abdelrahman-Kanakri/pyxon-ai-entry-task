@@ -1,3 +1,12 @@
+---
+title: Pyxon AI Document Parser
+emoji: 📚
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+pinned: false
+---
+
 # Pyxon AI - Junior Engineer Entry Task
 
 ## Overview
@@ -46,6 +55,7 @@ Create a comprehensive benchmark to test:
 ### 3. RAG Integration
 
 The parser should be designed to integrate with a RAG system that:
+
 - Connects to LLMs for question answering
 - Uses the vector database for semantic retrieval
 - Uses the SQL database for structured queries
@@ -78,47 +88,23 @@ Consider implementing advanced RAG techniques:
 
 Choose the tools and frameworks that best fit your implementation approach and expertise.
 
-## Deadline
-
-**Submission Deadline:** Monday, February 2nd, 13:00 Amman time.
-
-**Review Timeline:** Code reviews and candidate calls will be conducted on Tuesday, February 3rd.
-
-## Submission Guidelines
-
-### Process
-
-1. **Fork this repository** to your GitHub account
-2. **Implement the solution** following the requirements above
-3. **Create a working demo** that can be accessed and tested online
-4. **Create a Pull Request** with:
-   - **Contact Information** (required) - Your email address or phone number for communication
-   - **Demo link** (required) - A live, accessible demo to test the implementation
-   - Clear description of what was implemented
-   - Architecture decisions and trade-offs
-   - How to run the code
-   - Benchmark results
-   - Any limitations or future improvements
-   - **Questions & Assumptions** - If you have any questions about the requirements, list them in the PR along with the assumptions you made to proceed
-
-### Important Notes
-
-- **Reply to emails:** After submitting your PR, you will receive an email. Please reply to confirm receipt and availability.
-- **Questions:** If you have any questions or ambiguities about the requirements, include them in your PR description along with the assumptions you made to proceed with the implementation.
-
 ### PR Description Template
 
 ```markdown
 ## Summary
+
 Brief overview of the implementation
 
 ## Contact Information
+
 📧 Email: [your-email@example.com] or 📱 Phone: [your-phone-number] - **REQUIRED**
 
 ## Demo Link
+
 🔗 [Link to live demo] - **REQUIRED**
 
 ## Features Implemented
+
 - [ ] Document parsing (PDF, DOCX, TXT)
 - [ ] Content analysis and chunking strategy selection
 - [ ] Fixed and dynamic chunking
@@ -130,25 +116,32 @@ Brief overview of the implementation
 - [ ] RAG integration ready
 
 ## Architecture
+
 Description of system design and key components
 
 ## Technologies Used
+
 List of libraries and frameworks
 
 ## Benchmark Results
+
 Key metrics and performance data
 
 ## How to Run
+
 Step-by-step instructions
 
 ## Questions & Assumptions
+
 If you had any questions about the requirements, list them here along with the assumptions you made:
+
 - Question 1: [Your question]
   - Assumption: [How you proceeded]
 - Question 2: [Your question]
   - Assumption: [How you proceeded]
 
 ## Future Improvements
+
 Ideas for enhancement
 ```
 

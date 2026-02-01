@@ -1,0 +1,26 @@
+# Minimal requirements for API to run (Python 3.8 compatible)
+# Core essentials only
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+python-dotenv>=0.21.0
+python-multipart>=0.0.6
+
+# Database
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+
+# Embeddings & Vector DB (no torch required for basic function)
+sentence-transformers>=2.2.0
+chromadb>=0.4.0
+
+# Text processing
+python-docx>=0.8.11
+pypdf>=3.0.0
+pdfplumber>=0.10.0
+
+# Interface
+streamlit>=1.20.0
+requests>=2.28.0
+

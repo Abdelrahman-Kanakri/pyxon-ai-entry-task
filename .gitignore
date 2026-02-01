@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Environment Variables
+.env
+
+# Database
+*.sqlite
+*.db
+database/*.sqlite
+database/*.db
+database/data/
+
+# Logs
+logs/
+*.log
+
+# Project specific
+data/uploaded/
+data/chroma_db/
+benchmarks/sample_documents/benchmark_sample.txt
+docs/dev_archive/
+__MACOSX/
+.DS_Store
